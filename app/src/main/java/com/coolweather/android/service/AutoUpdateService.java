@@ -52,7 +52,7 @@ public class AutoUpdateService extends Service {
             //有缓存时直接解析天气数据
             final Weather weather = Utility.handleWeatherResponse(weatherString);
             final String weatherId = weather.basic.weatherId;
-            String weatherUrl = "http://guolin.tech/api/weather?cityid=" + weatherId + "&key=bc0418b57b2d4918819d3974ac1285d9";
+            String weatherUrl = "http://guolin.tech/api/weather?cityid=" + weatherId + "&key=90392adec4684f07b4e83e2b8e3e4767";
             HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
